@@ -39,6 +39,9 @@ jobs:
         with:
           repository: studiopomar/kamafeu
           path: engine-source
+      - name: Install Linux dependencies
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev pkg-config
       - name: Build Tainah WORLD native library
         run: python3 engine-source/native/tainah/build.py
       - name: Build helper
