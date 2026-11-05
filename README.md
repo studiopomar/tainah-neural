@@ -1,4 +1,4 @@
-# Tainah Neural Resampler
+# Tainah Neural Resampler - EXPERIMENTAL
 
 Optional UTAU command-line resampler that runs the Tainah WORLD engine followed by the NSF vocoder. Kamafeu Studio's built-in Tainah WORLD renderer remains part of the base app; this helper is installed separately when the neural mode is selected.
 
